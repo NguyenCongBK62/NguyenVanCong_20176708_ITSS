@@ -5,11 +5,11 @@
 　・チェックボックスにチェックが入っているかアイテムをグレーアウトする
 */
 
-function TodoItem( props ) {
+function TodoItem( {item} ) {
   return (
     <label className="panel-block">
       <input type="checkbox" />
-      {props.item.text}
+      {item.text}
     </label>
   );
 }
