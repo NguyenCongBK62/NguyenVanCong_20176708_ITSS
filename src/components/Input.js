@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 function Input( onChange ) {
   return (
     <div className="panel-block">
-      <input class="input" type="text" onInputChange={inputSubmit}></input>
+      <input class="input" type="text"></input>
     </div>
   );
 }

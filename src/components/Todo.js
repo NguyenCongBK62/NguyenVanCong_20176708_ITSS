@@ -18,10 +18,6 @@ import useStorage from '../hooks/storage';
 /* ライブラリ */
 import {getKey} from "../lib/util";
 
-const onInputChange = (event) => {
-  React.useState({key: getKey(), text: event.target.value, done: false});
-}
-
 function Todo() {
   const [items, putItems] = React.useState([
       /* テストコード 開始 */
@@ -30,15 +26,11 @@ function Todo() {
     { key: getKey(), text: '明日の準備をする', done: false },
     /* テストコード 終了 */
   ]);
-    const inputData = (data) => {
-      
-    }
   return (
     <div className="panel">
       <div className="panel-heading">
         ITSS ToDoアプリ
       </div>
-      <Input onInputChange={onInputChange}/>
       {items.map(item => (
         <TodoItem item={item} />
       ))}

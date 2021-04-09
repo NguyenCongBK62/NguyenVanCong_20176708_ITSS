@@ -4,16 +4,12 @@
 　・チェックボックスにチェックが入っているか管理する
 　・チェックボックスにチェックが入っているかアイテムをグレーアウトする
 */
-const changeColor = (key) => {
-  const element = document.getElementById(key);
-  element.style.color = 'grey';
-}
 
-function TodoItem( {item} ) {
+function TodoItem( props ) {
   return (
-    <label className="panel-block" id={item.key}>
-      <input type="checkbox"  onClick={() => changeColor(item.key)} />
-      {item.text}
+    <label className="panel-block">
+      <input type="checkbox" />
+      {props.item.text}
     </label>
   );
 }
