@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDNSMEzT3nk4t4wNOb38mqdXl3jr4tlZHg",
-  authDomain: "fir-sample-dfc03.firebaseapp.com",
-  projectId: "fir-sample-dfc03",
-  storageBucket: "fir-sample-dfc03.appspot.com",
-  messagingSenderId: "875330456564",
-  appId: "1:875330456564:web:c081ff715aeae0116b07a1"
+  apiKey: "AIzaSyBrIDQEZ-hhFlLilzZa8D-w9WB_UOc6eMA",
+  authDomain: "todo-app-b4997.firebaseapp.com",
+  projectId: "todo-app-b4997",
+  storageBucket: "todo-app-b4997.appspot.com",
+  messagingSenderId: "273373786308",
+  appId: "1:273373786308:web:347babf80ee8ade7849991"
 };
 
 firebase.initializeApp(firebaseConfig);
